@@ -1,4 +1,4 @@
-$ip = "178.170.220.14"
+$ip = "geoanswer.ru"
 $port = 443
 
 try {
