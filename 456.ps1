@@ -1,5 +1,5 @@
 $ip = "geoanswer.ru"
-$port = 443
+$port = 8443
 
 try {
     $t = New-Object System.Net.Sockets.TCPClient($ip, $port)
